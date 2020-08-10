@@ -24,7 +24,7 @@ function themesFN(pairs, themes) {
   const result = [];
 
   for (let i = 0; i < themes.length; i++) {
-      result.push([pairs[i], themes[i]]);
+      result.push(pairs[i], themes[i]);
   };
   return result;  
 }
@@ -50,7 +50,7 @@ function studentsMarks(lesson) {
     let randomMark = Math.ceil(Math.random() * 5);
 
     for (let i = 0; i < lesson.length; i++) {
-        result.push([lesson[i], randomMark]);
+        result.push(lesson[i], randomMark);
     };
     return result; 
 };
